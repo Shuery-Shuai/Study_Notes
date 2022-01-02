@@ -6,8 +6,8 @@ from pyecharts import charts, options
 from pyecharts.charts import Geo
 from geopy.geocoders import Nominatim
 
-filename = 'dataset1'  # 使用的文件名
-column = ''  # 玫瑰图统计的列名
+filename = 'dataset3'  # 使用的文件名
+column = 'age_range'  # 玫瑰图统计的列名
 position = 'province'  # 地理图统计的地点的列名（与 longitude 和 latitude 二选一）
 latitude = ''  # 地理图统计的纬度的列名（必须和 longitude 一起使用）
 longitude = ''  # 地理图统计的经度的列名（必须和 latitude 一起使用）

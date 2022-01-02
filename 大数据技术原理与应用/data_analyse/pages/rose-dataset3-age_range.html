@@ -6,12 +6,19 @@
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
 
 </head>
-<body>
-    <div id="7560e166c9284d2c972d3918f758403f" class="chart-container" style="width:900px; height:500px;"></div>
+<body onresize="resizeFresh()">  <!-- 添加刷新函数调用 -->
+<!-- 添加刷新函数调用-->
+<style type="text/css">
+    html, body {
+        height: 100%;
+        width: 100%
+    }
+</style>
+<div id="8847f4b2307d4773b398a9c48416ab45" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_7560e166c9284d2c972d3918f758403f = echarts.init(
-            document.getElementById('7560e166c9284d2c972d3918f758403f'), 'white', {renderer: 'canvas'});
-        var option_7560e166c9284d2c972d3918f758403f = {
+        var chart_8847f4b2307d4773b398a9c48416ab45 = echarts.init(
+            document.getElementById('8847f4b2307d4773b398a9c48416ab45'), 'white', {renderer: 'canvas'});
+        var option_8847f4b2307d4773b398a9c48416ab45 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -143,7 +150,15 @@
         }
     ]
 };
-        chart_7560e166c9284d2c972d3918f758403f.setOption(option_7560e166c9284d2c972d3918f758403f);
+        chart_8847f4b2307d4773b398a9c48416ab45.setOption(option_8847f4b2307d4773b398a9c48416ab45);
     </script>
+    </script>
+	<script>
+        var x=window.innerWidth;
+        function resizeFresh(){
+            if(x!=window.innerWidth)
+            location.reload();
+        }
+	</script>
 </body>
 </html>
